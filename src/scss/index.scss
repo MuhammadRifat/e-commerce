@@ -1,0 +1,23 @@
+@import './abstract/variables';
+@import './overrides/bootstrap';
+@import './global/global';
+@import './global/reset';
+
+// style for Add to Cart btn
+.addBtn{
+    background-color: $primary;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+
+.addBtn:hover{
+    background-color: $hover;
+}
+
+// Active Navigation
+.activeNav{
+    text-decoration: underline;
+}
+
