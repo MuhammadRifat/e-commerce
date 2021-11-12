@@ -4,7 +4,7 @@ import Icon from '../Icon';
 
 const Item = () => {
     return (
-        <Col xs={6} md={4} lg={3} className="p-2">
+        <Col xs={6} lg={4} xl={3} className="p-2">
             <div className="border rounded shadow-sm">
                 <div className="text-center">
                     <img src="https://i.ibb.co/YkhvhB4/Beef-Premium.webp" width="150" alt="" />

@@ -21,3 +21,43 @@
     text-decoration: underline;
 }
 
+.categoryNav:hover{
+    background-color: lightgray;
+}
+
+.positionSticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+}
+
+// search form
+.search-form input{
+    width: 100%;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-form input:focus{
+    outline: none;
+}
+
+.search-form button{
+    border: none;
+    padding: 5px 12px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 0px 15px 15px 0px;
+}
+
+// responsive design
+@media only screen and (max-width: 768px) {
+    .hide {
+        display: none !important;
+    }
+    .show {
+        display: flex !important;
+    }
+}
+

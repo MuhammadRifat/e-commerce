@@ -7,7 +7,7 @@ const Category = () => {
     const { categoryName } = useParams();
     return (
         <Container>
-            <h3>This is Category Page: {categoryName}</h3>
+            <h4 className="text-center border-bottom">{categoryName} </h4>
             <Row>
                 <Item />
                 <Item />
