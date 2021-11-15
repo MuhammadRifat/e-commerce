@@ -7,14 +7,7 @@ const Popular = () => {
         <Container className="my-3">
             <h3 className="text-center">Popular Items</h3>
             <Row>
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
+                
             </Row>
         </Container>
     );

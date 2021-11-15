@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Header from "./components/common/Header";
 import SideNav from "./components/common/SideNav";
+import Product from "./pages/Product/Product";
 const Home = React.lazy(() => import("./pages/Home/Home"));
 const Category = React.lazy(() => import("./pages/Category/Category"));
 const Blog = React.lazy(() => import("./pages/Blog/Blog"));
@@ -28,6 +29,7 @@ const AppRouter = () => {
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/category/:categoryName" element={<Category />} />
+                                <Route path="/product/:id" element={<Product />} />
                                 <Route path="/blog" element={<Blog />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>

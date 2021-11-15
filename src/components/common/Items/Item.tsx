@@ -1,17 +1,25 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Icon from '../Icon';
 
-const Item = () => {
+interface IProps {
+    product: IProduct;
+    isLoading: boolean;
+}
+
+const Item = ({ product }: IProps) => {
     return (
         <Col xs={6} lg={4} xl={3} className="p-2">
             <div className="border rounded shadow-sm">
-                <div className="text-center">
-                    <img src="https://i.ibb.co/YkhvhB4/Beef-Premium.webp" width="150" alt="" />
-                    
-                    <h5 className="mt-1">Beef Premium</h5>
-                    <h4>&#2547; 550</h4>
-                </div>
+                <Link to={`/product/${product._id}`}>
+                    <div className="text-center">
+                        <img src={product.imageURL} width="150" height="140" alt="" />
+
+                        <h5 className="mt-1">{product.pName}</h5>
+                        <h4>&#2547; {product.price}</h4>
+                    </div>
+                </Link>
                 <div className="p-2 text-center">
                     <select name="" id="" className="w-75 my-2">
                         <option value="1">1 Kg</option>
