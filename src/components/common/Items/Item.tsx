@@ -1,6 +1,8 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { Col } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { addToCart } from '../../../redux/actions/cartAction';
 import Icon from '../Icon';
 
 interface IProps {
@@ -9,9 +11,10 @@ interface IProps {
 }
 
 const Item = ({ product }: IProps) => {
+    const dispatch = useDispatch();
     return (
-        <Col xs={6} lg={4} xl={3} className="p-2">
-            <div className="border rounded shadow-sm">
+        <Col sm={6} lg={4} xl={3} className="p-2">
+            <div className="rounded shadow bg-white">
                 <Link to={`/product/${product._id}`}>
                     <div className="text-center">
                         <img src={product.imageURL} width="150" height="140" alt="" />
@@ -25,7 +28,7 @@ const Item = ({ product }: IProps) => {
                         <option value="1">1 Kg</option>
                         <option value=".5">0.5 Kg</option>
                     </select>
-                    <button className="addBtn mt-1"><Icon icon={faPlus} /> Add to Cart</button>
+                    <button onClick={() => dispatch(addToCart(product))} className="addBtn mt-1"><Icon icon={faPlus} /> Add to Cart</button>
                 </div>
             </div>
         </Col>

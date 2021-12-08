@@ -34,24 +34,24 @@ const SideNav = () => {
                     <Icon icon={faBars} /> Category
                 </button>
 
-                <Offcanvas show={show} onHide={handleClose} style={{width: "220px"}}>
+                <Offcanvas show={show} onHide={handleClose} style={{ width: "220px" }}>
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title>Category</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <ListGroup className="mt-1" onClick={handleClose}>
-                        <NavLink to="/category/Rice Shop"><ListGroup.Item className="categoryNav">Rice Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Vegetables Shop"><ListGroup.Item className="categoryNav">Vegetables Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Grocery Shop"><ListGroup.Item className="categoryNav">Grocery Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Fish market"><ListGroup.Item className="categoryNav">Fish market</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Chicken Shop"><ListGroup.Item className="categoryNav">Chicken Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Beef Shop"><ListGroup.Item className="categoryNav">Beef Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Mutton Shop"><ListGroup.Item className="categoryNav">Mutton Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Eggs Shop"><ListGroup.Item className="categoryNav">Eggs Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Fruits Shop"><ListGroup.Item className="categoryNav">Fruits Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Cosmetics Shop"><ListGroup.Item className="categoryNav">Cosmetics Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Beverage & Foods Shop"><ListGroup.Item className="categoryNav">Beverage & Foods Shop</ListGroup.Item></NavLink>
-                    <NavLink to="/category/Medicine Shop"><ListGroup.Item className="categoryNav">Medicine Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Rice Shop"><ListGroup.Item className="categoryNav">Rice Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Vegetables Shop"><ListGroup.Item className="categoryNav">Vegetables Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Grocery Shop"><ListGroup.Item className="categoryNav">Grocery Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Fish market"><ListGroup.Item className="categoryNav">Fish market</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Chicken Shop"><ListGroup.Item className="categoryNav">Chicken Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Beef Shop"><ListGroup.Item className="categoryNav">Beef Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Mutton Shop"><ListGroup.Item className="categoryNav">Mutton Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Eggs Shop"><ListGroup.Item className="categoryNav">Eggs Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Fruits Shop"><ListGroup.Item className="categoryNav">Fruits Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Cosmetics Shop"><ListGroup.Item className="categoryNav">Cosmetics Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Beverage & Foods Shop"><ListGroup.Item className="categoryNav">Beverage & Foods Shop</ListGroup.Item></NavLink>
+                            <NavLink to="/category/Medicine Shop"><ListGroup.Item className="categoryNav">Medicine Shop</ListGroup.Item></NavLink>
                         </ListGroup>
                     </Offcanvas.Body>
                 </Offcanvas>

@@ -8,6 +8,7 @@ import {
 import Header from "./components/common/Header";
 import SideNav from "./components/common/SideNav";
 import Product from "./pages/Product/Product";
+import Skeleton from "./skeletons/Skeleton";
 const Home = React.lazy(() => import("./pages/Home/Home"));
 const Category = React.lazy(() => import("./pages/Category/Category"));
 const Blog = React.lazy(() => import("./pages/Blog/Blog"));
@@ -31,6 +32,7 @@ const AppRouter = () => {
                                 <Route path="/category/:categoryName" element={<Category />} />
                                 <Route path="/product/:id" element={<Product />} />
                                 <Route path="/blog" element={<Blog />} />
+                                <Route path="/skeleton" element={<Skeleton />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
                         </Suspense>

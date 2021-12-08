@@ -23,9 +23,7 @@ const useAsync = <T>(asyncFunction: () => Promise<T>) => {
                 setStatus('error');
                 setData(null);
             })
-    }, []);
-
-    console.log(asyncFunction);
+    }, [asyncFunction]);
 
     return (
         {
