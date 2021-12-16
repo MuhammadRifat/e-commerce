@@ -66,6 +66,23 @@
     cursor: pointer;
 }
 
+// side cart  button
+.sideCart{
+    position: fixed;
+    right: 0;
+    top: 45%;
+}
+
+.placeOrderBtn{
+    position: absolute;
+    bottom: 3px;
+    right: .5px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
 // responsive design
 @media only screen and (max-width: 768px) {
     .hide {

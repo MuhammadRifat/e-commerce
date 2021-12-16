@@ -2,7 +2,7 @@ import { Carousel, Container } from 'react-bootstrap';
 
 const HeaderMain = () => {
     return (
-        <Container className="mt-1">
+        <Container fluid className="mt-1">
             <Carousel fade>
                 <Carousel.Item>
                     <img

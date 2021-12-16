@@ -1,8 +1,12 @@
-import axios, {AxiosResponse} from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
 const instance = axios.create({
     baseURL: process.env.REACT_APP_API_BASE_URL,
-    timeout: 15000
+    timeout: 15000,
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'bearer ' + btoa("rifat")
+    }
 });
 
 const responseBody = (response: AxiosResponse) => response.data;

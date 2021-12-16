@@ -2,11 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface IProps{
     icon: any;
+    size?: any;
 }
 
-const Icon = ({icon} : IProps) => {
+const Icon = ({icon, size} : IProps) => {
     return (
-        <FontAwesomeIcon icon={icon} />
+        <FontAwesomeIcon icon={icon} size={size} />
     );
 };
 

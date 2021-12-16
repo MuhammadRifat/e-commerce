@@ -13,21 +13,22 @@ interface IProps {
 const Item = ({ product }: IProps) => {
     const dispatch = useDispatch();
     return (
-        <Col sm={6} lg={4} xl={3} className="p-2">
-            <div className="rounded shadow bg-white">
-                <Link to={`/product/${product._id}`}>
+        <Col sm={6} lg={4} xl={3} className="">
+            <div className="rounded shadow-sm bg-white mt-2">
+                <Link to={`/product/${product.id}`}>
                     <div className="text-center">
                         <img src={product.imageURL} width="150" height="140" alt="" />
 
-                        <h5 className="mt-1">{product.pName}</h5>
-                        <h4>&#2547; {product.price}</h4>
+                        <h6 className="mt-1">{product.product_name}</h6>
+                        <span>{product.weight}</span>
+                        <h5>&#2547; {product.price}</h5>
                     </div>
                 </Link>
                 <div className="p-2 text-center">
-                    <select name="" id="" className="w-75 my-2">
+                    {/* <select name="" id="" className="w-75 my-2">
                         <option value="1">1 Kg</option>
                         <option value=".5">0.5 Kg</option>
-                    </select>
+                    </select> */}
                     <button onClick={() => dispatch(addToCart(product))} className="addBtn mt-1"><Icon icon={faPlus} /> Add to Cart</button>
                 </div>
             </div>

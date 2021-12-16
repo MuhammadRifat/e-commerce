@@ -2,15 +2,15 @@ import requests from "./httpService";
 
 class ProductService {
     getProducts(): Promise<IProduct[]> {
-        return requests.get('/products')
+        return requests.get('/products.php')
     }
 
     getProductById(id: string): Promise<IProduct> {
-        return requests.get(`/product/${id}`);
+        return requests.get(`/products.php?productId=${id}`);
     }
 
-    getProductByCategory(category: string): Promise<IProduct[]> {
-        return requests.get(`/products/${category}`);
+    getProductByCategory(categoryId: string): Promise<IProduct[]> {
+        return requests.get(`/products.php?categoryId=${categoryId}`);
     }
 
 }

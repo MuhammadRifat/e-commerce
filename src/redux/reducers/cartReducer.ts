@@ -8,7 +8,7 @@ const cartReducer = (state: IProduct[] = [], action: CartAction) => {
         }
 
         case ActionType.REMOVE_FROM_CART: {
-            const newState = state.filter(item => item._id !== action.payload);
+            const newState = state.filter(item => item.id !== action.payload);
             return newState;
         }
 

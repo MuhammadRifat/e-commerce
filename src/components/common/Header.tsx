@@ -19,7 +19,7 @@ const Header = () => {
         <>
             {/* Top Navigation */}
             <div className="bg-lightPrimary">
-                <Container className="d-flex justify-content-between py-1" style={{ fontSize: '14px' }}>
+                <Container fluid className="d-flex justify-content-between py-1" style={{ fontSize: '14px' }}>
                     <div>
                         <b><Icon icon={faPhoneAlt} /> Call us: </b>
                         <a href="callto:0123456789" className="text-decoration-none mx-2 text-light">0123456789</a>
@@ -43,7 +43,7 @@ const Header = () => {
 
             {/* Main Navigation */}
             <Navbar bg="primary" variant="dark" className="sticky-top">
-                <Container className="py-1">
+                <Container fluid className="py-1">
                     <Col md={4}>
                         <Navbar.Brand>
                             <Link to="/">
